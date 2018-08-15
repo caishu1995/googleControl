@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "my first chrome extension",
+  "version": "1.0",
+  "background": {
+      "page": "background.html"
+  },
+  "browser_action": {
+      "default_icon": "1.png",
+      "default_title": "这是我的第一个chrome插件",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+      "matches": ["https://www.baidu.com/*"],
+      "js": ["jquery-2.0.2.min.js", "func.js"]
+  }],
+  "permissions": ["https://www.baidu.com/*"]
+}
