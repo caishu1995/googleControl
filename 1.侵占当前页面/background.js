@@ -18,7 +18,4 @@ chrome.tabs.onSelectionChanged.addListener(function(tabId, selectInfo) {
  * 初始化方法 ，注入func.js事件
  * @param {Object} tabId
  */
-function initialize(tabId){
-    chrome.tabs.executeScript(tabId, {file: "jquery-2.0.2.min.js", allFrames: true});
-    chrome.tabs.executeScript(tabId, {file: "func.js", allFrames: true});
-}
+function initialize(tabId){}
