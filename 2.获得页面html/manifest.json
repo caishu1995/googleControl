@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "获得页面html",
+  "version": "1.0",
+  "background": {
+      "page": "background.html"
+  },
+  "browser_action": {
+      "default_icon": "1.png",
+      "default_title": "这是我的第一个chrome插件",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+      "matches": ["https://www.baidu.com/*"],
+      "js": ["jquery-3.3.1.min.js", "func.js"]
+  }],
+  "permissions": ["tabs", "https://www.baidu.com/*"]
+}
