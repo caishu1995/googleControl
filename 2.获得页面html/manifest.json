@@ -10,9 +10,9 @@
       "default_title": "这是我的第一个chrome插件",
       "default_popup": "popup.html"
   },
-  "content_scripts": [{
+  "permissions": ["tabs", "https://www.baidu.com/*"],
+  "content_scripts":[{
       "matches": ["https://www.baidu.com/*"],
-      "js": ["jquery-3.3.1.min.js", "func.js"]
-  }],
-  "permissions": ["tabs", "https://www.baidu.com/*"]
+      "js": ["content.js"]
+  }]
 }

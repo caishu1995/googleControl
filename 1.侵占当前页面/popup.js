@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-    $("#createData").click(function(e) {
-        chrome.tabs.executeScript(null, {code:"init();", allFrames: true});
-    })
+	document.getElementById("createData").onclick = function(e) {
+        chrome.tabs.executeScript(null, {code:"document.write('你被占领了！哈哈哈')", allFrames: true});
+    }
 });
